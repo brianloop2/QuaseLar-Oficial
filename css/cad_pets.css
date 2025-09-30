@@ -1,0 +1,40 @@
+.page_cad_pets{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(188, 188, 207);
+    max-width: 3440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cad_pets{
+    width: 58rem;
+    height: 34rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cad_pets_itens1{
+    width: 24rem;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cad_pets_itens2{
+    width: 34rem;
+    height: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group_inputs_pet{
+    height: 32rem;
+    width: 32rem;
+    border-radius: 1rem;
+    background-color: green;
+}
