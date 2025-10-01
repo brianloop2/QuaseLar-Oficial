@@ -36,5 +36,35 @@
     height: 32rem;
     width: 32rem;
     border-radius: 1rem;
-    background-color: green;
+    background-color: white;
+    padding: 1.4rem;
+}
+.group_inputs_pet div{
+    border: 1px red solid;
+}
+.group_inputs_pet label, .group_inputs_pet input, .group_inputs_pet textarea, 
+.group_inputs_pet select, .group_inputs_pet select option{
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: 'open-sans';
+}
+.group_inputs_pet select{
+     /* Fundo e Borda */
+    background-color: #f8f8f8; /* Cinza claro */
+    border: 2px solid #007bff; /* Borda azul */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    width: 250px; /* Largura para exemplo */
+
+    /* Remoção da aparência padrão (importante para ter mais controle) */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.group_inputs_pet select:focus{
+    border-color: #0056b3; /* Azul mais escuro */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra suave */
+    outline: none; /* Remove o outline padrão */
 }
