@@ -39,8 +39,14 @@
     background-color: white;
     padding: 1.4rem;
 }
-.group_inputs_pet div{
-    border: 1px red solid;
+
+.group_inputs_pet .pet_cad_inputs1, .group_inputs_pet .pet_cad_inputs2,
+.group_inputs_pet .pet_cad_inputs3, .group_inputs_pet .pet_cad_inputs4{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 .group_inputs_pet label, .group_inputs_pet input, .group_inputs_pet textarea, 
 .group_inputs_pet select, .group_inputs_pet select option{
@@ -48,16 +54,17 @@
     font-weight: 600;
     font-family: 'open-sans';
 }
+.group_inputs_pet label{
+    margin-right: 0.275rem;
+}
 .group_inputs_pet select{
      /* Fundo e Borda */
-    background-color: #f8f8f8; /* Cinza claro */
-    border: 2px solid #007bff; /* Borda azul */
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 10px 15px;
-    font-size: 16px;
+    background-color: transparent;
+    /* background-color: #f8f8f8;  */
+    border-radius: 0.2rem; 
     color: #333;
-    width: 250px; /* Largura para exemplo */
-
+    width: 6rem;
+    padding-left: 0.3rem;
     /* Remoção da aparência padrão (importante para ter mais controle) */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -67,4 +74,85 @@
     border-color: #0056b3; /* Azul mais escuro */
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra suave */
     outline: none; /* Remove o outline padrão */
+}
+.group_inputs_pet input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+.group_inputs_pet input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+.group_inputs_pet input{
+    width: 10rem; 
+    border-radius: 4px;
+    padding: 0.3rem 0;
+    padding-left: 0.4rem;
+    border: 0.1rem solid #ccc; 
+    border-bottom: 0.1rem solid #ccc; 
+    background-color: transparent; 
+    outline: none; 
+    color: #333; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    }
+.group_inputs_pet input:focus {
+    border: 1px solid #007bff8d; 
+    /* box-shadow: 0 1px 0 0 #007bff; */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra suave */
+}
+/* Placeholder styling */
+.group_inputs_pet input::placeholder {
+    color: #aaa; 
+}
+.group_inputs_pet textarea{
+    border-radius: 4px;
+    padding: 0.3rem 0;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    border: 0.1rem solid #ccc; 
+    border-bottom: 0.1rem solid #ccc; 
+    background-color: transparent; 
+    outline: none; 
+    color: #333; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    width: 100%;
+}
+.group_inputs_pet textarea:focus{
+    border: 1px solid #007bff8d; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra suave */
+}
+.motivo_doacao{
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.motivo_doacao div label{
+    margin-top: 0.35rem;
+    width: 11.4rem;
+}
+.motivo_doacao div{
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+.motivo_doacao span{
+    width: 100%;
+    text-align: right;
+    font-size: 0.625rem;
+    font-family: 'open-sans';
+    color: #333;
+}
+
+
+
+
+
+
+
+/* Estilo para quando estiver perto do limite */
+.limite-atingido {
+    color: #dc3545 !important; /* Vermelho para indicar o limite */
 }
