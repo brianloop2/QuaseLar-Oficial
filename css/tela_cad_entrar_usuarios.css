@@ -1,0 +1,65 @@
+.tela_cad_entrar{
+    height: 90vh;
+    width: 100%;
+    max-width: 3440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+}
+.group_usuarios_inputs{
+    position: relative;
+    width: 30rem;
+}
+.group_usuarios_inputs .entrar_usuario input, 
+.group_usuarios_inputs .cad_usuario input{
+    width: 100%;
+    /* Padding ajustado para compensar a borda */
+    padding: 14px 10px 4px 10px; 
+    
+    /* NOVA BORDA COMPLETA */
+    border: 1px solid #ccc; 
+    
+    /* Remove a borda-inferior que estava antes */
+    border-bottom: 2px solid #ccc; 
+    
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease; /* Transição em 'all' para animar cor da borda */
+
+    /* Opcional: Borda arredondada */
+    border-radius: 4px; 
+}
+.group_usuarios_inputs .entrar_usuario input:focus,
+.group_usuarios_inputs .cad_usuario input:focus{
+    border-color: #007bff; 
+    /* Garante que a borda inferior também mude */
+    border-bottom-color: #007bff;
+    /* Efeito de "sombra" no foco para um visual 3D suave */
+    box-shadow: 0 0 0 1px #007bff; 
+}
+.group_usuarios_inputs .entrar_usuario label, 
+.group_usuarios_inputs .cad_usuario label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: #f0f2f5; /* Adicionado background para cobrir a borda ao flutuar */
+    padding: 0 5px; /* Espaçamento para o background */
+}
+.group_usuarios_inputs .entrar_usuario input:focus + label, 
+.group_usuarios_inputs .entrar_usuario input:valid + label{
+    top: 0; 
+    font-size: 12px;
+    color: #007bff;
+    /* Ajuste para que o label flutuante fique no meio da borda superior */
+    transform: translate(-5px, -50%); 
+} 
+
+
