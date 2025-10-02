@@ -9,11 +9,83 @@
     background-color: white;
 }
 .group_usuarios_inputs{
-    position: relative;
-    width: 30rem;
+    height: 30rem;
+    width: 46rem;
+    border: 1px rebeccapurple solid;
+    display: flex;
+    flex-direction: row;
 }
-.group_usuarios_inputs .entrar_usuario input, 
-.group_usuarios_inputs .cad_usuario input{
+/*=========================================================================================================*/
+/*Login*/
+.entrar_usuario{
+    height: 100%;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cad_usuario{
+    height: 100%;
+    width: 26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px coral solid;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input-group {
+    position: relative;
+    width: 300px;
+}
+
+/* Estilização do Campo de Input - MUDANÇAS AQUI */
+.input-group input {
     width: 100%;
     /* Padding ajustado para compensar a borda */
     padding: 14px 10px 4px 10px; 
@@ -32,16 +104,19 @@
     /* Opcional: Borda arredondada */
     border-radius: 4px; 
 }
-.group_usuarios_inputs .entrar_usuario input:focus,
-.group_usuarios_inputs .cad_usuario input:focus{
+
+/* Efeito de Foco Vibrante - MUDANÇAS AQUI */
+.input-group input:focus {
+    /* Mude a cor da borda completa no foco */
     border-color: #007bff; 
     /* Garante que a borda inferior também mude */
     border-bottom-color: #007bff;
     /* Efeito de "sombra" no foco para um visual 3D suave */
     box-shadow: 0 0 0 1px #007bff; 
 }
-.group_usuarios_inputs .entrar_usuario label, 
-.group_usuarios_inputs .cad_usuario label{
+
+/* Estilização do Label (Placeholder Flutuante) - Sem alteração de posição */
+.input-group label {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -50,16 +125,19 @@
     font-size: 16px;
     pointer-events: none;
     transition: all 0.3s ease;
-    background-color: #f0f2f5; /* Adicionado background para cobrir a borda ao flutuar */
+    background-color: white;
     padding: 0 5px; /* Espaçamento para o background */
 }
-.group_usuarios_inputs .entrar_usuario input:focus + label, 
-.group_usuarios_inputs .entrar_usuario input:valid + label{
+
+/* Animação: Label Flutua (para cima) - MUDANÇAS AQUI */
+
+/* 1. Quando o input está em foco (selecionado) */
+.input-group input:focus + label,
+/* 2. Quando o input já tem conteúdo (para não voltar) */
+.input-group input:valid + label { 
     top: 0; 
     font-size: 12px;
     color: #007bff;
     /* Ajuste para que o label flutuante fique no meio da borda superior */
     transform: translate(-5px, -50%); 
-} 
-
-
+}
