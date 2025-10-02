@@ -9,11 +9,11 @@ include './template/header.php';
         </nav>
         <nav class="cad_pets_itens2">
             <div class="group_inputs_pet">
-                <div><h1>Cadastre de animais</h1></div>
+                <div class="titulo_cadPets"><h3>Cadastre de animais</h3></div>
                 <div class="pet_cad_inputs1">
                     <div>
                         <label for="nome_pet">Nome do pet:</label>
-                        <input type="text" id="nome_pet" placeholder="Digite o nome do pet">
+                        <input type="text" id="nome_pet" placeholder="Digite o nome do pet" maxlength="28">
                     </div>
                     <div>
                         <label for="sexo">Sexo:</label>
@@ -79,6 +79,9 @@ include './template/header.php';
                         <textarea name="" id="motivo_doacao" rows="5" cols="36" style=" resize: none;" placeholder="Ex: Minha cadela teve filhotes e não tenho condição de manter eles ..." maxlength="255"></textarea>
                     </div>
                     <span id="contador-caracteres">0 / 150 </span>
+                </div>
+                <div class="alinha_cad_button">
+                    <button class="button" type="submit">Enviar</button>
                 </div>
             </div>
         </nav>
