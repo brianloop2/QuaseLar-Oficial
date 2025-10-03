@@ -7,7 +7,7 @@
     <!-- conexão para o css -->
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/cad_pets.css">
+    <link rel="stylesheet" href="./css/tela_cad_pets.css">
     <link rel="stylesheet" href="./css/tela_cad_entrar_usuarios.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -43,7 +43,7 @@
                 <li class="cadastrar-menu"><a href="" class="cadastrar-menu"><i class="bi bi-person-add"></i>Casdastrar-se</a></li>
                 <li><a href="#" onclick="exibirModal()"><i class="bi bi-person-raised-hand"></i>Quem somos?</a></li>
                 <li><a href=""><i class="bi bi-search-heart"></i>Procura-se</a></li>
-                <li><a href="cad_pets.php"><i class="bi bi-box2-heart"></i>Colocar para adoção</a></li>
+                <li><a href="tela_cad_pets.php"><i class="bi bi-box2-heart"></i>Colocar para adoção</a></li>
                 <li><a href=""><i class="bi bi-gear-fill"></i>Configurações</a></li>
             </ul>
         </nav>
